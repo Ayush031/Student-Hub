@@ -1,6 +1,5 @@
 import React from 'react'
 import './Navbar.css'
-import Carousel from './CarouselS'
 
 function Navbar() {
 
@@ -56,11 +55,10 @@ function Navbar() {
                         ))}
                     </div>
                     <div className="border border-black w-[95vw]">
-                        <img src={Pandora} className='w-full ' />
+                        {/* <img src={} className='w-full ' /> */}
                     </div>
                 </div>
             </div>
-            {/* <Carousel /> */}
         </>
     )
 }
