@@ -34,13 +34,6 @@ function Navbar() {
         </svg >
     }
 
-    const router = createBrowserRouter([
-        {
-            path: "/",
-            element: <Root />,
-        },
-    ]);
-
     return (
         <>
             <div className="h-screen">

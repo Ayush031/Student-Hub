@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
 
-function login() {
+function Login() {
   return (
-    <div>login</div>
-  )
+    <div className="flex h-[92vh] justi w-[95.5%] ">
+      <div className="w-[50%] bg-[#D9D9D9] flex justify-center items-center  ">
+      something is wrong here
+      </div>
+      <div className="w-[50%] bg-[#D9D9D9]">
+
+      </div>
+    </div>
+  );
 }
 
-export default login
+export default Login;
