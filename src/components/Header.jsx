@@ -69,6 +69,8 @@ function Header() {
         <p className="font-bold text-xl mt-14 pl-20 pb-2 bg-[E3E3E3]">
           Campuses
         </p>
+
+        <div className="bg-[#B9E390] h-8 w-24 mt-14 ml-10"></div>
         
         
         
@@ -82,7 +84,7 @@ function Header() {
               The ultimate hub for education!
             </p>
             <button className="w-[150px]  h-[45px] mt-auto ml-auto rounded-md flex justify-center text-sm font-semibold border-gray-300 shadow-md border items-center  bg-[#B9E390]">
-              Sign up
+              explore
             </button>
           </div>
           <div className="flex flex-col basis-[30%] h-[50vh] border-gray-300 border shadow-md p-3 rounded-md">
@@ -92,7 +94,7 @@ function Header() {
               The ultimate hub for education!
             </p>
             <button className="w-[150px]  h-[45px] mt-auto ml-auto rounded-md flex justify-center text-sm font-semibold border-gray-300 shadow-md border items-center  bg-[#B9E390]">
-              Sign up
+              explore
             </button>
           </div>
           <div className="flex flex-col basis-[30%] h-[50vh] border-gray-300 border shadow-md p-3 rounded-md">
@@ -102,7 +104,7 @@ function Header() {
               The ultimate hub for education!
             </p>
             <button className="w-[150px]  h-[45px] mt-auto ml-auto rounded-md flex justify-center text-sm font-semibold border-gray-300 shadow-md border items-center  bg-[#B9E390]">
-              Sign up
+              explore
             </button>
           </div>
         </div>
