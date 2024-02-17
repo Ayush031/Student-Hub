@@ -34,6 +34,13 @@ function Navbar() {
         </svg >
     }
 
+    const router = createBrowserRouter([
+        {
+            path: "/",
+            element: <Root />,
+        },
+    ]);
+
     return (
         <>
             <div className="h-screen">
@@ -53,9 +60,6 @@ function Navbar() {
                                 <span className="" >{key}</span>
                             </div>
                         ))}
-                    </div>
-                    <div className="border border-black w-[95vw]">
-                        {/* <img src={} className='w-full ' /> */}
                     </div>
                 </div>
             </div>
