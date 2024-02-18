@@ -1,13 +1,14 @@
 import React from 'react'
 import NewNav from './components/NewNav'
-import abstract from './assets/homeAbs.svg'
 import Header from './components/Header'
+import ExpertProfile from './components/ExpertProfile'
 
 function App() {
   return (
     <>
-      <NewNav />     
-      <Header />
+      <NewNav />
+      {/* <Header /> */}
+      <ExpertProfile />
     </>
   )
 }
