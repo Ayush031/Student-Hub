@@ -18,50 +18,51 @@ function Header() {
       <div className="flex justify-evenly items-center w-full h-93vh z-0">
         <div className="flex flex-col justify-center gap-5 h-[93vh] items-center basis-1/2">
           <div className="flex flex-col justify-center items-baseline w-[80%] gap-9">
-            <p className="text-5xl font-bold pb-3">Explore Domains!</p>
+            <p className="text-5xl font-bold ">Explore Domains!</p>
 
             <input
-              className="h-12 border-gray-500 border  w-[97%] rounded-full pl-6 "
+              className="h-12 border-gray-500 shadow-md border  w-[97%] rounded-full pl-6 "
               placeholder="Search here!"
               type="text"
             />
 
             <div>
-              <p className="font-md pl-2 pb-9 pt-14 ">most searched domains!</p>
+              <p className="font-md pl-2 pb-6 pt-14 font-medium ">Most searched domains!</p>
               <div className=" flex flex-col w-full gap-3">
                 <div className="flex gap-3">
-                  <p className="font-semibold pt-1 pb-1 pl-20 pr-20 border-gray-300 border rounded-full text-sm">
+                  <p className="shadow-md font-semibold pt-1 pb-1 pl-20 pr-20 border-gray-300 border rounded-full text-sm">
                     Frontend
                   </p>
-                  <p className="font-semibold pt-1 pb-1 pl-20 pr-20 border-gray-300 border bg-[#FFA47A] rounded-full text-sm">
-                    Frontend
+                  <p className="shadow-md font-semibold pt-1 pb-1 pl-20 pr-20 border-gray-300 border bg-[#FFA47A] rounded-full text-sm">
+                    Backend
                   </p>
-                  <p className="font-semibold pt-1 pb-1 pl-20 pr-20 border-gray-300 border rounded-full text-sm">
-                    Frontend
+                  <p className="shadow-md font-semibold pt-1 pb-1 pl-20 pr-20 border-gray-300 border rounded-full text-sm">
+                    Ai/Ml
                   </p>
                 </div>
                 <div className="flex gap-3">
-                  <p className="font-semibold pt-2 pb-2 pl-20 pr-20 border-gray-300 border rounded-full text-sm">
-                    Frontend
+                  <p className="shadow-md font-semibold pt-2 pb-2 pl-20 pr-20 border-gray-300 border rounded-full text-sm">
+                    Web3
                   </p>
-                  <p className="font-semibold pt-2 pb-2 pl-20 pr-20 border-gray-300 border rounded-full text-sm">
-                    Frontend
+                  <p className="shadow-md font-semibold pt-2 pb-2 pl-20 pr-20 border-gray-300 border rounded-full text-sm">
+                    GameDev
                   </p>
-                  <p className="font-semibold pt-2 pb-2 pl-20 pr-20 border-gray-300 border rounded-full bg-[#D9BFFF] text-sm">
-                    Frontend
-                  </p>
-                </div>
-                <div className="flex gap-3 ">
-                  <p className="font-semibold pt-2 pb-2 pl-20 pr-20 border-gray-300 border  rounded-full text-sm">
-                    Frontend
-                  </p>
-                  <p className="font-semibold pt-2 pb-2 pl-20 pr-20 border-gray-300 border  rounded-full bg-[#B9E390] text-sm">
-                    Frontend
-                  </p>
-                  <p className="font-semibold pt-2 pb-2 pl-20 pr-20 border-gray-300 border  rounded-full text-sm">
-                    Frontend
+                  <p className="shadow-md font-semibold pt-2 pb-2 pl-20 pr-20 border-gray-300 border rounded-full bg-[#D9BFFF] text-sm">
+                    Devops
                   </p>
                 </div>
+                <div className="flex gap-3">
+                  <p className="shadow-md font-semibold pt-2 pb-2 pl-20 pr-20 border-gray-300 border rounded-full text-sm">
+                    Ui/Ux
+                  </p>
+                  <p className="shadow-md font-semibold pt-2 pb-2 pl-20 pr-20 bg-[#bfd4ff]  border-gray-300 border rounded-full text-sm">
+                    App dev
+                  </p>
+                  <p className="shadow-md font-semibold pt-2 pb-2 pl-20 pr-20 border-gray-300 border rounded-full text-sm">
+                    Cyber
+                  </p>
+                </div>
+                
               </div>
             </div>
           </div>
