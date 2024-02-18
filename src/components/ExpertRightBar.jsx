@@ -1,5 +1,6 @@
 import React from 'react'
 import leaderboard from '../assets/leaderboard.svg'
+import graph from '../assets/graph.png'
 
 function ExpertRightBar() {
     return (
@@ -14,9 +15,10 @@ function ExpertRightBar() {
                         <div>
                             <span>Campus Rank</span> <br /> <span className='text-xs' >Based on Activity</span>
 
+
                         </div>
                         <div className='flex' >
-                            <img src={leaderboard} className='mt-2' />
+                            <img src={graph} className='mt-24' />
                         </div>
                     </div>
                 </div>
