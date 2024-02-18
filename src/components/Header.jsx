@@ -3,6 +3,8 @@ import abstract from "../assets/homeAbs.svg";
 import pandora from "../assets/PANDORA.png";
 import dropdown from '../assets/dropdown.svg'
 import Expertcard from "./Expertcard";
+import { Link } from "react-router-dom";
+
 
 function Header() {
 
@@ -69,19 +71,19 @@ function Header() {
         </div>
       </div>
 
-      <div className="h-auto pb-24 bg-[#ecf2f4] flex flex-col z-0 relative w-full justify-start items-baseline">
+      <div className="h-auto pb-24 bg-[#daecef] flex flex-col z-0 relative w-full justify-start items-baseline">
         
         <div className="flex gap-3">
         <p className="font-bold text-xl mt-14 pl-20 pb-2 bg-[E3E3E3]">
-          Campuses
+          Events
         </p>
 
         <div>
-        <div className="bg-[#B9E390] h-8 w-36 mt-14 ml-10 flex justify-between items-center p-3  rounded-md " onClick={clickevent}>Delhi<img  className="cursor-pointer" src={dropdown} alt="" /></div>
+        <div className="bg-[#B9E390] h-8 w-36 mt-14 ml-10 flex justify-between items-center p-3  rounded-md " onClick={clickevent}>Skills<img  className="cursor-pointer" src={dropdown} alt="" /></div>
         {drop && (<div className="bg-[#B9E390] h-24 w-36  ml-10 flex flex-col justify-between absolute items-center p-3 rounded-md z-10 ">
-          <p className="border-b-gray-600 w-full border flex justify-center ">chandigarh</p>
-          <p className="border-b-gray-600 w-full border flex justify-center ">Banglore</p>
-          <p className="border-b-gray-600 w-full border flex justify-center ">Hyedrabad</p>
+          <p className="border-b-gray-600 w-full border flex justify-center ">web-dev</p>
+          <p className="border-b-gray-600 w-full border flex justify-center ">AI/ML</p>
+          <p className="border-b-gray-600 w-full border flex justify-center ">Datascience</p>
         </div>)}
         </div>
         
@@ -92,32 +94,32 @@ function Header() {
         <div className="w-full flex p-8 justify-evenly">
           <div className="flex flex-col bg-white basis-[30%] h-[50vh] border-gray-300 border shadow-md p-3 rounded-md">
             <img src={pandora} className="h-[50%] rounded-md" alt="" />
-            <p className="font-semibold mt-5">Chandigarh University</p>
+            <p className="font-semibold mt-5">Cipherthon</p>
             <p className="text-gray-600 text-md pt-2">
-              The ultimate hub for education!
+              Experience the real hackathon!
             </p>
             <button className="w-[150px]  h-[45px] mt-auto ml-auto rounded-md flex justify-center text-sm font-semibold border-gray-300 shadow-md border items-center  bg-[#B9E390]">
-              explore
+             <Link to="/events">  explore</Link>
             </button>
           </div>
           <div className="flex flex-col bg-white basis-[30%] h-[50vh] border-gray-300 border shadow-md p-3 rounded-md">
             <img src={pandora} className="h-[50%] rounded-md" alt="" />
-            <p className="font-semibold mt-5">Chandigarh University</p>
+            <p className="font-semibold mt-5">Pandathon</p>
             <p className="text-gray-600 text-md pt-2">
-              The ultimate hub for education!
+              No pandas are safe here!
             </p>
             <button className="w-[150px]  h-[45px] mt-auto ml-auto rounded-md flex justify-center text-sm font-semibold border-gray-300 shadow-md border items-center  bg-[#B9E390]">
-              explore
+            <Link to="/events">  explore</Link>
             </button>
           </div>
           <div className="flex flex-col bg-white basis-[30%] h-[50vh] border-gray-300 border shadow-md p-3 rounded-md">
             <img src={pandora} className="h-[50%] rounded-md" alt="" />
-            <p className="font-semibold mt-5">Chandigarh University</p>
+            <p className="font-semibold mt-5">TechTrackers</p>
             <p className="text-gray-600 text-md pt-2">
-              The ultimate hub for education!
+              cipherthon is better than us!
             </p>
             <button className="w-[150px]  h-[45px] mt-auto ml-auto rounded-md flex justify-center text-sm font-semibold border-gray-300 shadow-md border items-center  bg-[#B9E390]">
-              explore
+            <Link to="/events">  explore</Link>
             </button>
           </div>
         </div>
