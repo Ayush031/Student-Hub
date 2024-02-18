@@ -124,6 +124,7 @@ function Header() {
             </button>
           </div>
         </div>
+        <p className="font-bold pl-20 text-xl pb-6 pt-7">Mentors</p>
         <Expertcard />
       </div>
     </div>

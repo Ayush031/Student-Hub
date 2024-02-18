@@ -20,6 +20,8 @@ export default function Expertcard() {
   return (
     
     <div className='flex justify-center w-full gap-8  items-center relative'>
+
+       
     
     <div className='h-[40vh] w-[250px] bg-violet-100 border-gray-400 rounded-3xl border shadow-lg z-0 relative object-contain flex flex-col justify-start items-center'>
         <img className='h-1/3 aspect-square rounded-full shadow-2xl mt-6 border-violet-800 border-[5px] ' src={master} alt="" />
