@@ -5,7 +5,7 @@ import chat from "../assets/chat.svg"
 function Feedback() {
     return (
         <>
-            <div className='h-[93vh] flex justify-center p-2 '>
+            <div className='h-screen flex justify-center p-2 '>
                 <div className='basis-2/5 text-center bg-green-300 rounded-tl-3xl rounded-br-3xl p-3 pt-9 h-auto m-2'>
                     <div className='text-3xl font-bold mb-8 ' >
                         Feedback Form
