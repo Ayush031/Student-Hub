@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import abstract from "../assets/homeAbs.svg";
 import pandora from "../assets/PANDORA.png";
-import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
+import dropdown from '../assets/dropdown.svg'
+import Expertcard from "./Expertcard";
 
 function Header() {
+
+  const [drop ,setDrop] = useState(false)
+  const clickevent = () => {
+    const something = setDrop(!drop)
+  }
+
   return (
     <div>
-      <div className="flex justify-evenly items-center w-full h-93vh">
+      <div className="flex justify-evenly items-center w-full h-93vh z-0">
         <div className="flex flex-col justify-center gap-5 h-[93vh] items-center basis-1/2">
           <div className="flex flex-col justify-center items-baseline w-[80%] gap-9">
             <p className="text-5xl font-bold pb-3">Explore Domains!</p>
@@ -58,26 +64,33 @@ function Header() {
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center h-[93vh]   basis-1/2">
+        <div className="flex justify-center items-center h-[93vh]  basis-1/2">
           <img className="w-[550px]" src={abstract} alt="" />
         </div>
       </div>
 
-      <div className="h-screen bg-[#E3E3E3] flex flex-col w-full justify-start items-baseline">
+      <div className="h-auto pb-24 bg-[#ecf2f4] flex flex-col z-0 relative w-full justify-start items-baseline">
         
         <div className="flex gap-3">
         <p className="font-bold text-xl mt-14 pl-20 pb-2 bg-[E3E3E3]">
           Campuses
         </p>
 
-        <div className="bg-[#B9E390] h-8 w-24 mt-14 ml-10"></div>
+        <div>
+        <div className="bg-[#B9E390] h-8 w-36 mt-14 ml-10 flex justify-between items-center p-3  rounded-md " onClick={clickevent}>Delhi<img  className="cursor-pointer" src={dropdown} alt="" /></div>
+        {drop && (<div className="bg-[#B9E390] h-24 w-36  ml-10 flex flex-col justify-between absolute items-center p-3 rounded-md z-10 ">
+          <p className="border-b-gray-600 w-full border flex justify-center ">chandigarh</p>
+          <p className="border-b-gray-600 w-full border flex justify-center ">Banglore</p>
+          <p className="border-b-gray-600 w-full border flex justify-center ">Hyedrabad</p>
+        </div>)}
+        </div>
         
-        
-        
+     
+
         </div>
 
         <div className="w-full flex p-8 justify-evenly">
-          <div className="flex flex-col jus basis-[30%] h-[50vh] border-gray-300 border shadow-md p-3 rounded-md">
+          <div className="flex flex-col bg-white basis-[30%] h-[50vh] border-gray-300 border shadow-md p-3 rounded-md">
             <img src={pandora} className="h-[50%] rounded-md" alt="" />
             <p className="font-semibold mt-5">Chandigarh University</p>
             <p className="text-gray-600 text-md pt-2">
@@ -87,7 +100,7 @@ function Header() {
               explore
             </button>
           </div>
-          <div className="flex flex-col basis-[30%] h-[50vh] border-gray-300 border shadow-md p-3 rounded-md">
+          <div className="flex flex-col bg-white basis-[30%] h-[50vh] border-gray-300 border shadow-md p-3 rounded-md">
             <img src={pandora} className="h-[50%] rounded-md" alt="" />
             <p className="font-semibold mt-5">Chandigarh University</p>
             <p className="text-gray-600 text-md pt-2">
@@ -97,7 +110,7 @@ function Header() {
               explore
             </button>
           </div>
-          <div className="flex flex-col basis-[30%] h-[50vh] border-gray-300 border shadow-md p-3 rounded-md">
+          <div className="flex flex-col bg-white basis-[30%] h-[50vh] border-gray-300 border shadow-md p-3 rounded-md">
             <img src={pandora} className="h-[50%] rounded-md" alt="" />
             <p className="font-semibold mt-5">Chandigarh University</p>
             <p className="text-gray-600 text-md pt-2">
@@ -108,6 +121,7 @@ function Header() {
             </button>
           </div>
         </div>
+        <Expertcard />
       </div>
     </div>
   );
