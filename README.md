@@ -1,8 +1,14 @@
-# React + Vite
+# Student Hub
+A Concept of a Platform providing student access to pan india communities along with the Open-Source Tools and Resources to enhance the productivity.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Key Feature
+1. `Authenticity`: Verified Profiles of community Founders, so you can trust them.
+2. `Personlization`: Filter out the domains and Connect with peers having same intersts.
+3.  `Recognitions`: Achievement badges to the users engaging and contributing to the community.
+
+
+# Author
+[Ayush Kansal](https://linkedin.com/in/aykansal)
+[Satyansh Mittal](https://linkedin.com/in/satyansh-mittal-76985921a)
